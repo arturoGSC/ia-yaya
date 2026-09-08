@@ -1,18 +1,17 @@
-# IA YAYA — V2.2 final
+# IA YAYA — El escaparate del 0,01%
 
-Web estática bilingüe (ES/EN) para GitHub Pages.
+Web estática preparada para GitHub Pages.
 
-## Concepto
-La home es la portada visual de la propuesta: **IA YAYA: El escaparate del 0,01%**. La única interacción visible en la portada es el QR que lleva a `https://iayaya.es/`.
+## Estructura
+- `index.html`
+- `assets/`
 
-**ECOSISTEMA IA YAYA** es el paraguas conceptual. Dentro de él, la **Biblioteca de Recuerdos** integra las montañas de **microtiques** producidos mediante impresión térmica. El Archivero cuida, filtra y clasifica ese conocimiento cotidiano.
+## Publicación
+Subir el contenido de este ZIP directamente a la raíz de la rama `main`.
+GitHub Pages: Deploy from a branch → `main` → `/(root)`.
 
-La imagen de portada de la propuesta es la referencia principal de cómo se imagina la instalación real. Se incorpora además una visualización exterior día/noche como apoyo.
+## Dominio
+El proyecto incluye el QR de `https://iayaya.es/`.
 
-## Publicar en GitHub Pages
-1. Extrae este ZIP.
-2. Sube todo su contenido al repositorio `arturoGSC/ia-yaya` en la rama `main`.
-3. GitHub Pages: `Settings → Pages → Deploy from a branch → main → /(root)`.
-4. El dominio configurado es `iayaya.es`.
-
-El formulario de esta V2 es demostrativo: todavía no envía ni almacena datos.
+## Nota
+El formulario de esta versión es una demostración local: no envía ni almacena datos.

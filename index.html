@@ -2,53 +2,262 @@
 <html lang="es">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="description" content="IA YAYA — El escaparate del 0,01%. Una instalación urbana e interactiva sobre el valor humano en la era digital.">
-<title>IA YAYA — El escaparate del 0,01%</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="IA YAYA V8 — El escaparate del 0,01%. Una instalación de Fundación Cotec que pone la tecnología al servicio de la memoria humana.">
+<meta name="theme-color" content="#f4efe5">
+<title>IA YAYA — El escaparate del 0,01% · V8</title>
 <style>
-:root{--paper:#eee9df;--ink:#151513;--muted:#706b61;--line:#b8b0a2;--wood:#9a7656;--cotec:#23476b;--sonar-cyan:#4fdbe8;--sonar-pink:#e9a0b5;--yaya:#b96a4a;--yaya-soft:#d9a184;--yaya-deep:#7f3f2f;--dark:#171714;--white:#f7f4ed;--max:1280px}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:Arial,Helvetica,sans-serif;line-height:1.45}a{color:inherit;text-decoration:none}img{max-width:100%;display:block}.wrap{width:min(var(--max),90vw);margin:auto}
-.top{position:fixed;z-index:30;top:0;left:0;right:0;display:flex;justify-content:space-between;align-items:center;padding:18px 5vw;mix-blend-mode:multiply}.mark{font-weight:900;letter-spacing:.11em;font-size:.95rem;position:relative}.mark:after{content:'';display:inline-block;width:22px;height:3px;margin-left:8px;vertical-align:middle;background:linear-gradient(90deg,var(--sonar-cyan) 0 50%,var(--sonar-pink) 50%)}.langs{display:flex;align-items:center;gap:5px;font-size:.78rem;letter-spacing:.08em}.langs button{border:0;background:none;color:inherit;font:inherit;cursor:pointer;padding:4px 6px}.langs .on{text-decoration:underline;text-underline-offset:4px}
-.cover-home{min-height:100svh;position:relative;display:block;background:var(--paper);overflow:hidden}.hero-cover{position:absolute;inset:0;background:url("assets/cover-reference.jpg") center/contain no-repeat;background-color:var(--paper)}.cover-home:after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(180deg,rgba(255,255,255,0) 65%,rgba(238,233,223,.12) 100%)}.hero{min-height:100svh;position:relative;display:flex;align-items:flex-end;overflow:hidden;background:var(--paper)}.hero:before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(238,233,223,.12) 20%,rgba(238,233,223,.9) 92%),url("assets/material-grafico-pagina-12.jpg") center/cover;filter:saturate(.75)}.hero-inner{position:relative;padding:17vh 0 8vh;width:100%}.kicker{text-transform:uppercase;letter-spacing:.18em;font-size:.72rem;margin-bottom:24px}.hero h1{font-size:clamp(5rem,17vw,15rem);line-height:.72;letter-spacing:-.085em;margin:0;font-weight:900}.hero h1 span{display:block}.hero h1 span:last-child{color:var(--yaya)}.hero-bottom{display:flex;justify-content:space-between;gap:40px;align-items:end;margin-top:55px}.hero-sub{font-family:Georgia,serif;font-size:clamp(1.35rem,2.6vw,2.5rem);line-height:1.05;max-width:760px}.human-signal{display:flex;align-items:center;gap:10px;margin-top:25px;font-size:.66rem;text-transform:uppercase;letter-spacing:.14em;color:var(--muted)}.human-signal i{display:block;width:10px;height:10px;border-radius:50%;background:var(--yaya);box-shadow:0 0 0 5px rgba(185,106,74,.12)}.scroll-note{font-size:.72rem;text-transform:uppercase;letter-spacing:.15em;white-space:nowrap}
-.section{padding:14vh 0;border-top:1px solid var(--line)}.grid{display:grid;grid-template-columns:1fr 2.15fr;gap:8vw}.num{font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:var(--cotec)}.big{color:var(--ink);font-size:clamp(2.5rem,5.5vw,6.5rem);line-height:.9;letter-spacing:-.055em;margin:0;max-width:1000px}.copy{font-size:clamp(1.05rem,1.65vw,1.45rem);max-width:780px}.quote{font-family:Georgia,serif;font-size:clamp(2.2rem,5vw,5rem);line-height:.98;letter-spacing:-.04em;margin:0 0 45px;max-width:950px}
-.statrow{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--ink);margin:7vh 0}.stat{background:var(--paper);padding:30px 28px 34px}.stat strong{display:block;font-size:clamp(3.5rem,8vw,8rem);line-height:.8;letter-spacing:-.07em;margin-bottom:18px}.stat:nth-child(2) strong{color:var(--yaya)}.stat small{text-transform:uppercase;letter-spacing:.12em;font-size:.68rem}
-.media{margin-top:7vh}.media img{width:100%;max-height:78vh;object-fit:cover;border:1px solid var(--line)}.caption{font-size:.7rem;color:var(--muted);margin-top:9px;text-transform:uppercase;letter-spacing:.08em}
-.steps{display:grid;grid-template-columns:repeat(5,1fr);border-top:1px solid var(--ink);border-bottom:1px solid var(--ink);margin-top:7vh}.step{padding:26px 18px 32px;border-right:1px solid var(--line)}.step:last-child{border-right:0}.step b{display:block;font-size:.7rem;letter-spacing:.14em;color:var(--muted);margin-bottom:25px}.step:nth-child(3) b,.step:nth-child(4) b,.step:nth-child(5) b{color:var(--yaya)}.step span{font-family:Georgia,serif;font-size:clamp(1.45rem,2.5vw,2.4rem)}
-.yaya{background:var(--dark);color:var(--white);padding:9vw 0}.yaya .num{color:#aaa69e}.yaya .big{color:#f3d4dc}.yaya .wordplay span:last-child{color:var(--yaya-soft)}.yaya .copy{color:#e6e1d7}.wordplay{font-size:clamp(3rem,9vw,9rem);line-height:.78;letter-spacing:-.07em;font-weight:900;margin:7vh 0}.wordplay span{display:block}.wordplay .arrow{font-size:.3em;letter-spacing:.05em;margin:15px 0;color:#8e8a82}
-.archive{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);margin-top:7vh}.card{background:var(--paper);padding:28px;min-height:240px}.card .q{font-family:Georgia,serif;font-size:1.7rem;line-height:1.02}.card .tag{margin-top:50px;font-size:.65rem;text-transform:uppercase;letter-spacing:.12em;color:var(--muted)}
-.formbox{background:var(--dark);color:var(--paper);padding:clamp(35px,7vw,90px);margin-top:7vh}.formbox h3{font-family:Georgia,serif;font-size:clamp(2rem,4vw,4rem);line-height:.95;margin:0 0 50px}.formbox label{display:block;font-size:.7rem;text-transform:uppercase;letter-spacing:.12em;color:#aaa69e}.formbox input,.formbox textarea{width:100%;background:transparent;border:0;border-bottom:1px solid #65615a;color:var(--paper);padding:15px 0;margin:8px 0 30px;font:inherit;outline:none}.formbox input:focus,.formbox textarea:focus{border-bottom-color:var(--sonar-cyan)}.formbox textarea{min-height:110px;resize:vertical}.formbox button{border:0;background:var(--yaya);color:var(--dark);padding:16px 23px;cursor:pointer;font-weight:900;letter-spacing:.04em}.hint{font-size:.78rem;color:#96928a;max-width:650px;margin:0 0 28px}
-.goal{margin-top:7vh;padding:25px 0 0;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:25px;align-items:end}.goal-number{font-size:clamp(4rem,11vw,10rem);line-height:.75;letter-spacing:-.08em;color:var(--yaya)}.goal-copy{max-width:470px;font-family:Georgia,serif;font-size:clamp(1.25rem,2.2vw,2rem);line-height:1.02}.goal-copy small{display:block;font-family:Arial,Helvetica,sans-serif;font-size:.65rem;line-height:1.4;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-top:14px}.projectline{display:flex;gap:12px;flex-wrap:wrap;margin-top:5vh}.pill{border:1px solid var(--ink);padding:9px 13px;border-radius:999px;font-size:.67rem;text-transform:uppercase;letter-spacing:.1em}.cover-qr{position:absolute;right:4vw;bottom:4vh;display:flex;align-items:center;gap:16px;padding:12px 14px;background:rgba(247,244,237,.94);border:1px solid rgba(21,21,19,.22);backdrop-filter:blur(4px);box-shadow:0 10px 35px rgba(0,0,0,.08)}.cover-qr img{width:92px;height:92px;background:#fff;padding:6px}.cover-qr .qrtext{font-size:.62rem;line-height:1.25;text-transform:uppercase;letter-spacing:.12em;max-width:150px}.cover-qr .qrtext strong{display:block;font-size:.76rem;letter-spacing:.06em;margin-bottom:6px}.home-enter{display:none}.summary-lead{font-family:Georgia,serif;font-size:clamp(1.5rem,2.7vw,2.6rem);line-height:1.04;max-width:1000px}.ecosystem{background:#e7dfd3}.ecosystem .media img{object-fit:contain;background:#f7f4ed}.ecosystem-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);margin-top:7vh}.eco-card{background:#e7dfd3;padding:26px;min-height:170px}.eco-card b{display:block;font-size:.68rem;text-transform:uppercase;letter-spacing:.12em;margin-bottom:35px}.eco-card span{font-family:Georgia,serif;font-size:1.65rem;line-height:1}.archivero{border-left:4px solid var(--yaya);padding:24px 0 24px 28px;margin-top:7vh}.archivero h3{font-family:Georgia,serif;font-size:clamp(2rem,4vw,4rem);margin:0 0 10px}.archivero p{max-width:680px;margin:0;font-size:1.05rem}.summary-list{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--line);margin-top:7vh}.summary-item{background:var(--paper);padding:24px}.summary-item b{display:block;font-size:2rem;letter-spacing:-.04em;margin-bottom:7px}.summary-item small{text-transform:uppercase;letter-spacing:.1em;font-size:.65rem;color:var(--muted)}.footer{padding:8vh 0 5vh;border-top:1px solid var(--line);font-size:.75rem;color:var(--muted)}.footerline{display:flex;justify-content:space-between;gap:30px}
-@media(max-width:820px){.hero-cover{background-size:cover;background-position:center top}.cover-qr{right:4vw;bottom:4vh;padding:8px 9px;gap:9px}.cover-qr img{width:72px;height:72px;padding:5px}.cover-qr .qrtext{font-size:.55rem;max-width:115px}.cover-qr .qrtext strong{font-size:.65rem}.home-enter{left:4vw;bottom:4vh;font-size:.6rem}.top{padding:15px 5vw}.hero-inner{padding-top:18vh}.hero-bottom{display:block;margin-top:40px}.scroll-note{margin-top:30px}.grid{grid-template-columns:1fr;gap:35px}.steps{grid-template-columns:1fr}.step{border-right:0;border-bottom:1px solid var(--line)}.step:last-child{border-bottom:0}.statrow,.archive{grid-template-columns:1fr}.archive .card{min-height:180px}.yaya{padding:18vh 0}.footerline{display:block}}
-@media(max-width:820px){.goal{display:block}.goal-number{margin-bottom:28px}.human-signal{flex-wrap:wrap}.hero h1 span:last-child{color:var(--yaya)}}
+:root{
+  --paper:#f4efe5; --ink:#171614; --muted:#6d675f; --copper:#b87333;
+  --clay:#b77d5d; --wood:#8a674b; --line:rgba(23,22,20,.15);
+  --white:#fffdf8; --max:1180px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:Georgia,"Times New Roman",serif;line-height:1.55}
+img{max-width:100%;display:block}
+a{color:inherit}
+.nav{position:fixed;z-index:20;top:0;left:0;right:0;display:flex;justify-content:space-between;align-items:center;padding:16px 24px;background:rgba(244,239,229,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.brand{font-family:Arial,sans-serif;font-size:13px;letter-spacing:.16em;text-transform:uppercase;font-weight:700}
+.navlinks{display:flex;gap:20px;font:12px Arial,sans-serif;text-transform:uppercase;letter-spacing:.08em}
+.navlinks a{text-decoration:none}
+.lang{background:transparent;color:var(--ink);padding:3px 0;border-bottom:1px solid var(--ink);font:700 11px Arial,sans-serif;letter-spacing:.08em}
+@media(max-width:680px){.navlinks a:nth-child(2),.navlinks a:nth-child(3){display:none}.nav{padding:14px 16px}}
+.hero{min-height:100svh;padding:72px 20px 28px;display:grid;place-items:center;position:relative}
+.hero-inner{width:min(100%,var(--max));display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:48px;align-items:center}
+.cover{width:100%;max-height:78svh;object-fit:contain;object-position:center;border:1px solid var(--line);background:var(--paper)}
+.hero-copy{max-width:320px}
+.kicker{font:11px Arial,sans-serif;letter-spacing:.18em;text-transform:uppercase;color:var(--muted)}
+.hero h1{font-size:clamp(38px,5vw,70px);line-height:.95;margin:12px 0 18px;font-weight:400}
+.hero h1 em{font-style:normal;color:var(--copper)}
+.hero-copy p{font-size:19px;margin:0 0 22px}.hero-copy p em{font-style:normal;color:var(--copper)}
+.qrbox{border-top:1px solid var(--ink);padding-top:14px}
+.qr{width:150px;height:150px;margin:12px 0}
+.qrlabel{font:700 12px Arial,sans-serif;text-transform:uppercase;letter-spacing:.08em}
+.qrsmall{font:12px Arial,sans-serif;color:var(--muted)}
+@media(max-width:820px){
+ .hero{padding-top:76px}.hero-inner{grid-template-columns:1fr;gap:22px}.cover{max-height:64svh;order:1}.hero-copy{max-width:none;order:2}.hero h1{font-size:42px}.qr{width:118px;height:118px}
+}
+.section{padding:110px 20px}
+.wrap{width:min(100%,var(--max));margin:auto}
+.section-head{display:grid;grid-template-columns:1fr 2fr;gap:50px;border-top:1px solid var(--line);padding-top:18px;margin-bottom:60px}
+.section-num{font:11px Arial,sans-serif;letter-spacing:.15em;text-transform:uppercase;color:var(--muted)}
+.section h2{font-size:clamp(34px,5vw,62px);line-height:1.02;font-weight:400;margin:0}
+.lead{font-size:clamp(22px,3vw,34px);line-height:1.18;margin:0;max-width:850px}
+
+.material-map{margin-top:18px;border-top:1px solid var(--line)}
+.material-map p{display:grid;grid-template-columns:150px 1fr;gap:14px;margin:0;padding:10px 0;border-bottom:1px solid var(--line);font-size:15px}
+.material-map strong{font-family:Arial,sans-serif;font-size:11px;letter-spacing:.08em;text-transform:uppercase}
+.material-map span{color:var(--muted)}
+.material-statement{font-size:28px;line-height:1.15;margin:26px 0 0;max-width:520px}
+@media(max-width:680px){.material-map p{grid-template-columns:1fr;gap:2px}}
+.statement{font-size:clamp(28px,4vw,48px);line-height:1.08;max-width:920px;margin:70px 0 20px}
+.statement em{font-style:normal;color:var(--copper)}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:60px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{border-top:1px solid var(--line);padding-top:14px}
+.card h3{font:700 13px Arial,sans-serif;letter-spacing:.1em;text-transform:uppercase;margin:0 0 12px}
+.card p{margin:0;color:#38342f}
+.number{font-size:62px;line-height:1;color:var(--copper);margin-bottom:10px}
+.quote{border-left:4px solid var(--copper);padding:8px 0 8px 22px;font-size:24px;line-height:1.25}
+.gallery{display:grid;grid-template-columns:repeat(12,1fr);gap:12px}
+.gallery img{width:100%;height:100%;object-fit:cover;border:1px solid var(--line)}
+.g1{grid-column:span 7}.g2{grid-column:span 5}.g3{grid-column:span 5}.g4{grid-column:span 7}
+.implant{width:100%;border:1px solid var(--line);margin-top:30px}
+.steps{counter-reset:step}
+.step{display:grid;grid-template-columns:70px 1fr;gap:20px;padding:24px 0;border-top:1px solid var(--line)}
+.step:before{counter-increment:step;content:"0" counter(step);font:700 12px Arial,sans-serif;color:var(--copper)}
+.step h3{margin:0 0 6px;font-size:23px;font-weight:400}.step p{margin:0;color:#49443e}
+.formwrap{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:start}
+form{background:var(--white);border:1px solid var(--line);padding:26px}
+label{display:block;font:700 12px Arial,sans-serif;letter-spacing:.06em;text-transform:uppercase;margin:0 0 18px}
+input,textarea{width:100%;margin-top:8px;border:1px solid var(--line);background:#fff;padding:12px;font:16px Georgia,serif;border-radius:0}
+textarea{min-height:120px;resize:vertical}
+button{border:0;background:var(--ink);color:white;padding:13px 18px;font:700 12px Arial,sans-serif;text-transform:uppercase;letter-spacing:.08em;cursor:pointer}
+.formnote{font:12px Arial,sans-serif;color:var(--muted);margin-top:15px}
+.success{display:none;margin-top:14px;padding:12px;background:#e7dfcf;font:13px Arial,sans-serif}
+.footer{padding:60px 20px 90px;border-top:1px solid var(--line)}
+.footergrid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:40px}
+.footer h3{font-size:28px;font-weight:400;margin:0}.footer p{color:var(--muted)}
+@media(max-width:760px){
+ .section{padding:80px 18px}.section-head,.grid2,.grid3,.formwrap,.footergrid{grid-template-columns:1fr;gap:28px}.gallery{display:block}.gallery img{margin-bottom:12px}.statement{margin-top:45px}
+}
 </style>
+
+<style>
+.qr-link {
+  display: inline-block;
+  cursor: pointer;
+  line-height: 0;
+  text-decoration: none;
+}
+.qr-link img {
+  display: block;
+  cursor: pointer;
+}
+</style>
+
 </head>
 <body>
-<header class="top"><div></div><div class="langs"><button id="es" class="on">ES</button><span>/</span><button id="en">EN</button></div></header>
-<main id="top">
-<section class="hero cover-home" aria-label="Portada IA YAYA"><div class="hero-cover"></div><a class="cover-qr" href="#participa" aria-label="Entrar en la experiencia IA YAYA"><img src="assets/qr-iayaya.png" alt="QR de IA YAYA"><div class="qrtext"><strong data-es="Escanea para entrar" data-en="Scan to enter">Escanea para entrar</strong><span data-es="iayaya.es · nuestra única interacción con la IA" data-en="iayaya.es · our only interaction with AI">iayaya.es · nuestra única interacción con la IA</span></div></a></section>
+<header class="nav">
+  <a class="brand" href="#inicio">IA YAYA</a>
+  <nav class="navlinks" aria-label="Navegación">
+    <a href="#idea" data-i18n="ideaNav">La idea</a><a href="#ecosistema" data-i18n="ecosistemaNav">Ecosistema</a><a href="#deja-una-huella" data-i18n="participaNav">Participa</a>
+    <button class="lang" id="langToggle" type="button" aria-label="Switch to English">EN</button>
+  </nav>
+</header>
 
-<section id="proyecto" class="section"><div class="wrap grid"><div class="num">00 / <span data-es="El proyecto en 30 segundos" data-en="The project in 30 seconds">El proyecto en 30 segundos</span></div><div><p class="summary-lead" data-es="IA YAYA: El escaparate del 0,01% es una instalación interactiva pensada de forma nativa para el espacio KNOWCASE de la Fundación Cotec en Madrid. Mientras los sistemas automáticos controlan el 99,9% de los datos urbanos fríos, el valor transformador de nuestra sociedad sigue residiendo en ese 0,01% puramente humano que guarda los afectos, la intuición y nuestros inolvidables recuerdos como el “nudo de la abuela”." data-en="IA YAYA: The 0.01% showcase is an interactive installation conceived natively for Fundación Cotec's KNOWCASE space in Madrid. While automated systems control 99.9% of cold urban data, the transformative value of our society still resides in that purely human 0.01% that holds affection, intuition and unforgettable memories such as the “grandmother's knot”.">IA YAYA: El escaparate del 0,01% es una instalación interactiva pensada de forma nativa para el espacio KNOWCASE de la Fundación Cotec en Madrid. Mientras los sistemas automáticos controlan el 99,9% de los datos urbanos fríos, el valor transformador de nuestra sociedad sigue residiendo en ese 0,01% puramente humano que guarda los afectos, la intuición y nuestros inolvidables recuerdos como el “nudo de la abuela”.</p><p class="copy" style="margin-top:35px" data-es="La propuesta coge la tecnología más compleja —la IA— y la deforma mediante la empatía de un niño pequeño para convertirla en algo cercano, tierno y accesible. Un peatón de Chamberí puede entenderla al instante: escanear, escribir un recuerdo o idea corta y ver cómo una máquina lo imprime tras el cristal en tiempo real." data-en="The proposal takes the most complex technology —AI— and reshapes it through a child's empathy, making it close, tender and accessible. A passer-by in Chamberí can understand it instantly: scan, write a short memory or idea, and watch a machine print it behind glass in real time.">La propuesta coge la tecnología más compleja —la IA— y la deforma mediante la empatía de un niño pequeño para convertirla en algo cercano, tierno y accesible. Un peatón de Chamberí puede entenderla al instante: escanear, escribir un recuerdo o idea corta y ver cómo una máquina lo imprime tras el cristal en tiempo real.</p><p class="copy" style="margin-top:35px" data-es="La inteligencia colectiva late en la calle: el objetivo operativo es alcanzar 685 co-creadores diarios. Los incentivos previstos incluyen el Sello de Innovador IA YAYA, mentoría, co-creación, vídeos de 1 minuto y una Gala Cotec. En dos años: 104 ganadores semanales, 24 mensuales y 2 anuales." data-en="Collective intelligence pulses in the street: the operational target is 685 co-creators per day. Planned incentives include the IA YAYA Innovator Seal, mentoring, co-creation, one-minute videos and a Cotec Gala. Over two years: 104 weekly winners, 24 monthly winners and 2 annual winners.">La inteligencia colectiva late en la calle: el objetivo operativo es alcanzar 685 co-creadores diarios. Los incentivos previstos incluyen el Sello de Innovador IA YAYA, mentoría, co-creación, vídeos de 1 minuto y una Gala Cotec. En dos años: 104 ganadores semanales, 24 mensuales y 2 anuales.</p><p class="copy" style="margin-top:25px;font-size:.95rem" data-es="El proyecto se plantea con protección de datos desde el diseño, eficiencia energética e infraestructura circular, 100% desmontable y reutilizable, preparada para extenderse de forma segura hasta 36 meses." data-en="The project is designed with data protection by design, energy efficiency and a circular infrastructure: 100% demountable and reusable, prepared to extend safely up to 36 months.">El proyecto se plantea con protección de datos desde el diseño, eficiencia energética e infraestructura circular, 100% desmontable y reutilizable, preparada para extenderse de forma segura hasta 36 meses.</p><div class="summary-list"><div class="summary-item"><b>685</b><small data-es="co-creadores diarios · objetivo operativo" data-en="daily co-creators · operational target">co-creadores diarios · objetivo operativo</small></div><div class="summary-item"><b>104</b><small data-es="ganadores semanales en 2 años" data-en="weekly winners over 2 years">ganadores semanales en 2 años</small></div><div class="summary-item"><b>24</b><small data-es="ganadores mensuales" data-en="monthly winners">ganadores mensuales</small></div><div class="summary-item"><b>2</b><small data-es="ganadores anuales" data-en="annual winners">ganadores anuales</small></div><div class="summary-item"><b>36 meses</b><small data-es="horizonte máximo de instalación" data-en="maximum installation horizon">horizonte máximo de instalación</small></div><div class="summary-item"><b>100%</b><small data-es="desmontable y reutilizable · infraestructura circular" data-en="demountable and reusable · circular infrastructure">desmontable y reutilizable · infraestructura circular</small></div></div></div></div></section>
+<main id="inicio">
+<section class="hero">
+  <div class="hero-inner">
+    <img class="cover" src="assets/cover-image.jpg" alt="Imagen de IA YAYA">
+    <div class="hero-copy">
+      <div class="kicker" data-i18n="kicker">Fundación Cotec · KNOWCASE · Madrid</div>
+      <h1 data-i18n="heroTitle">El escaparate del <em>0,01%</em></h1>
+      <p data-i18n="heroLead">La tecnología cambia. Las personas siguen dejando <em>huella</em>.</p>
+      <div class="qrbox">
+        <div class="qrlabel" data-i18n="qrLabel">DEJA UNA HUELLA</div>
+        <a class="qr-link" href="https://iayaya.es/#deja-una-huella" aria-label="Deja una huella" title="Deja una huella"><img class="qr" src="assets/qr-iayaya.png" alt="Código QR para entrar en IA YAYA"></a>
+        <div class="qrsmall" data-i18n="qrSmall">RÉTANOS EN 30 SEGUNDOS Y CAMBIEMOS JUNTOS EL MUNDO</div>
+      </div>
+    </div>
+  </div>
+</section>
 
-<section class="section ecosystem"><div class="wrap grid"><div class="num">00A / <span data-es="Ecosistema IA YAYA" data-en="IA YAYA ecosystem">Ecosistema IA YAYA</span></div><div><h2 class="big" data-es="El ecosistema es el paraguas. La Biblioteca es donde crece." data-en="The ecosystem is the umbrella. The Library is where it grows.">El ecosistema es el paraguas. La Biblioteca es donde crece.</h2><p class="copy" data-es="Pantallas, plantas vivas, tiestos de arcilla, madera, impresora térmica y personas forman un único ecosistema. Dentro de él, la Biblioteca de Recuerdos integra las montañas de microtiques que deja la participación." data-en="Screens, living plants, clay pots, wood, a thermal printer and people form one ecosystem. Within it, the Memory Library integrates the mountains of microtiques left by participation.">Pantallas, plantas vivas, tiestos de arcilla, madera, impresora térmica y personas forman un único ecosistema. Dentro de él, la Biblioteca de Recuerdos integra las montañas de microtiques que deja la participación.</p><div class="media"><img src="assets/cover-reference.jpg" alt="Referencia de portada de la instalación IA YAYA"><div class="caption" data-es="Referencia visual principal: así se imagina IA YAYA en el espacio real" data-en="Main visual reference: how IA YAYA is imagined in the real space">Referencia visual principal: así se imagina IA YAYA en el espacio real</div></div><div class="media"><img src="assets/implantacion-dia-noche.png" alt="Visualización exterior de IA YAYA de día y de noche"><div class="caption" data-es="Visualización exterior · presencia de IA YAYA en la calle, de día y de noche" data-en="Exterior visualization · IA YAYA in the street, day and night">Visualización exterior · presencia de IA YAYA en la calle, de día y de noche</div></div><div class="ecosystem-grid"><div class="eco-card"><b>Pantallas</b><span data-es="Tecnología en lo cotidiano" data-en="Technology in everyday life">Tecnología en lo cotidiano</span></div><div class="eco-card"><b>Plantas vivas</b><span data-es="El archivo crece" data-en="The archive grows">El archivo crece</span></div><div class="eco-card"><b>Tiestos de arcilla</b><span data-es="Materia y cuidado" data-en="Material and care">Materia y cuidado</span></div><div class="eco-card"><b>Madera</b><span data-es="Casa, barrio, origen" data-en="Home, neighbourhood, origin">Casa, barrio, origen</span></div><div class="eco-card"><b>Impresión térmica</b><span data-es="La huella física del 0,01%" data-en="The physical trace of the 0.01%">La huella física del 0,01%</span></div><div class="eco-card"><b>Biblioteca de Recuerdos</b><span data-es="Montañas de microtiques" data-en="Mountains of microtiques">Montañas de microtiques</span></div></div><div class="archivero"><h3>El Archivero</h3><p data-es="Un rostro de los empleos del futuro integrado en lo cotidiano: cuida, filtra y clasifica los saberes colectivos que llegan a la Biblioteca." data-en="A face of future jobs integrated into everyday life: he cares for, filters and classifies the collective knowledge that reaches the Library.">Un rostro de los empleos del futuro integrado en lo cotidiano: cuida, filtra y clasifica los saberes colectivos que llegan a la Biblioteca.</p></div></div></div></section>
+<section class="section" id="idea">
+<div class="wrap">
+  <div class="section-head"><div class="section-num" data-i18n="sec1">01 · La idea</div><h2 data-i18n="ideaTitle">¿Qué queda de nosotros cuando una máquina puede hacerlo casi todo?</h2></div>
+  <p class="lead" data-i18n="ideaLead">IA YAYA nace de una pregunta humana. Ese 0,01% son los afectos, la intuición, el sentido común, los recuerdos y los saberes que aprendimos de otras personas. Y lo más humano no es estático: cada nueva vivencia añade una capa irrepetible a lo que somos.</p>
+  <p class="statement" data-i18n="ideaStatement">“No queremos que la IA <em>hable por nosotros</em>; queremos que nos ayude a guardar aquello que ninguna base de datos sabe explicar.”</p>
+  <div class="grid2">
+    <div class="quote" data-i18n="quote">El “nudo de la abuela” es inolvidable porque nos marca. Es un saber que alguien nos enseñó, una vivencia que queda dentro de nosotros y que es única en el tiempo. Cuando la compartimos, no solo la conservamos: hacemos sitio para que otras personas añadan nuevas vivencias y el archivo siga creciendo.</div>
+    <div class="card"><h3 data-i18n="iaYayaH">IA + YAYA</h3><p data-i18n="iaYayaP">Tomamos la tecnología más compleja y la deformamos mediante la empatía de un niño: la hacemos cercana, tierna y accesible. La IA no es la protagonista. Es la herramienta que ayuda a conservar lo humano.</p></div>
+    <div class="card"><h3 data-i18n="traceH">Lo inolvidable deja huella</h3><p data-i18n="traceP">El “nudo de la abuela” representa aquello que nos enseñaron y que permanece en nosotros. Cada nueva participación suma una vivencia distinta: una biblioteca viva, única en el tiempo, que convierte memoria compartida en nuevas oportunidades para quienes dan el paso y participan.</p></div>
+  </div>
+</div>
+</section>
 
-<section class="section"><div class="wrap grid"><div class="num">01 / <span data-es="El 0,01%" data-en="The 0.01%">El 0,01%</span></div><div><h2 class="big" data-es="El 99,9% puede medirse. El 0,01% se recuerda." data-en="99.9% can be measured. The 0.01% is remembered.">El 99,9% puede medirse. El 0,01% se recuerda.</h2><p class="copy" data-es="IA YAYA pone en valor ese pequeño porcentaje humano hecho de intuición, saberes intergeneracionales, afectos, oficios del cuidado y recuerdos compartidos." data-en="IA YAYA values that small human percentage made of intuition, intergenerational knowledge, care, affection, and shared memories.">IA YAYA pone en valor ese pequeño porcentaje humano hecho de intuición, saberes intergeneracionales, afectos, oficios del cuidado y recuerdos compartidos.</p><div class="statrow"><div class="stat"><strong>99,9%</strong><small data-es="volumen de datos · automatización · velocidad" data-en="data volume · automation · speed">volumen de datos · automatización · velocidad</small></div><div class="stat"><strong>0,01%</strong><small data-es="valor humano · intuición · memoria · cuidado" data-en="human value · intuition · memory · care">valor humano · intuición · memoria · cuidado</small></div></div><div class="goal"><div class="goal-number">500K</div><div class="goal-copy"><span data-es="Un color para quienes dan el paso. Cada escaneo activa el 0,01% y deja una huella humana en la Biblioteca de Recuerdos." data-en="A color for those who take the step. Each scan activates the 0.01% and leaves a human trace in the Memory Library.">Un color para quienes dan el paso. Cada escaneo activa el 0,01% y deja una huella humana en la Biblioteca de Recuerdos.</span><small data-es="Meta de participación · 2 años · personas anónimas" data-en="Participation target · 2 years · anonymous people">Meta de participación · 2 años · personas anónimas</small></div><div class="goal-copy"><span data-es="No buscamos identidades. Buscamos gestos." data-en="We are not looking for identities. We are looking for gestures.">No buscamos identidades. Buscamos gestos.</span><small data-es="IA YAYA · participación anónima" data-en="IA YAYA · anonymous participation">IA YAYA · participación anónima</small></div></div></div></div></section>
+<section class="section" id="experiencia">
+<div class="wrap">
+  <div class="section-head"><div class="section-num" data-i18n="sec2">02 · La experiencia</div><h2 data-i18n="expTitle">Una máquina imprime lo que una persona no quiere perder.</h2></div>
+  <div class="steps">
+    <div class="step"><div><h3 data-i18n="scanH">Escanea</h3><p data-i18n="scanP">El QR abre una interfaz web móvil optimizada.</p></div></div>
+    <div class="step"><div><h3 data-i18n="writeH">Escribe</h3><p data-i18n="writeP">Dos campos obligatorios: Idea, máximo 280 caracteres, e Impacto Social. Un tercer campo opcional: “Si eres ganador/a, ¿cómo podemos contactarte?”. Sin registros obligatorios.</p></div></div>
+    <div class="step"><div><h3 data-i18n="printH">Imprime</h3><p data-i18n="printP">Una impresora térmica convierte la aportación en una huella física, en tiempo real, detrás del cristal.</p></div></div>
+    <div class="step"><div><h3 data-i18n="saveH">Se guarda</h3><p data-i18n="saveP">Cada aportación alimenta la Biblioteca de Recuerdos y las montañas de microtiques del ecosistema IA YAYA.</p></div></div>
+  </div>
+  <p class="formnote" data-i18n="demoNote">Experiencia diseñada para cargar en menos de 1 segundo. En esta web, el formulario es una demostración: no envía ni almacena datos.</p>
+</div>
+</section>
 
-<section class="section"><div class="wrap grid"><div class="num">02 / <span data-es="La idea" data-en="The idea">La idea</span></div><div><p class="quote" data-es="Usamos la inteligencia artificial para proteger y rescatar los saberes analógicos, no para eliminar el factor humano." data-en="We use artificial intelligence to protect and rescue analogue knowledge, not to remove the human factor.">Usamos la inteligencia artificial para proteger y rescatar los saberes analógicos, no para eliminar el factor humano.</p><p class="copy" data-es="Un escaparate de Chamberí se convierte en un lugar para frenar el ritmo, respirar y recordar. La tecnología más puntera se disfraza de empatía y nostalgia cotidiana." data-en="A Chamberí showcase becomes a place to slow down, breathe and remember. Cutting-edge technology disguises itself as empathy and everyday nostalgia.">Un escaparate de Chamberí se convierte en un lugar para frenar el ritmo, respirar y recordar. La tecnología más puntera se disfraza de empatía y nostalgia cotidiana.</p><div class="media"><img src="assets/material-grafico-pagina-12.jpg" alt="Boceto frontal y referencias visuales de IA YAYA"><div class="caption" data-es="Material gráfico del proyecto · boceto frontal y referencias" data-en="Project graphic material · front sketch and references">Material gráfico del proyecto · boceto frontal y referencias</div></div></div></div></section>
+<section class="section" id="ecosistema">
+<div class="wrap">
+  <div class="section-head"><div class="section-num" data-i18n="sec3">03 · Ecosistema IA YAYA</div><h2 data-i18n="ecoTitle">Una biblioteca que crece con la calle.</h2></div>
+  <div class="grid3">
+    <div class="card"><div class="number">01</div><h3 data-i18n="libH">Biblioteca de Recuerdos</h3><p data-i18n="libP">Una colección viva de ideas, recuerdos y saberes cotidianos aportados por personas.</p></div>
+    <div class="card"><div class="number">02</div><h3 data-i18n="microH">Microtiques</h3><p data-i18n="microP">Pequeñas huellas impresas que convierten la participación en materia visible y acumulable.</p></div>
+    <div class="card"><div class="number">03</div><h3 data-i18n="archH">El Archivero IA YAYA</h3><p data-i18n="archP">Un empleo del futuro que todavía no existe: custodiará, filtrará y clasificará los saberes colectivos impresos en los tiques, evitando que queden atrapados tras las pantallas.</p></div>
+  </div>
+  <img class="implant" src="assets/implantacion-dia-noche.png" alt="Implantación de IA YAYA de día y de noche">
+  <div class="grid2" style="margin-top:50px">
+    <div class="card"><h3 data-i18n="materialsH">Papel + madera + impresión térmica + Cobre YAYA</h3><p data-i18n="materialsP">El papel guarda la memoria. La impresión térmica deja la huella. La madera acerca la pieza a lo cotidiano. La arcilla y las plantas hablan de cuidado y crecimiento. En la pantalla aparece el cobre. En el papel queda la huella.</p></div>
+    <div class="card"><h3 data-i18n="materialLanguageH">El lenguaje de los materiales</h3><div class="material-map"><p><strong data-i18n="paperMap">Papel</strong><span data-i18n="paperMapP">memoria / huella / permanencia</span></p><p><strong data-i18n="screenMap">Pantalla</strong><span data-i18n="screenMapP">tecnología / proceso / presente</span></p><p><strong data-i18n="woodMap">Madera</strong><span data-i18n="woodMapP">cercanía / cotidiano</span></p><p><strong data-i18n="clayMap">Arcilla + plantas</strong><span data-i18n="clayMapP">cuidado / crecimiento</span></p><p><strong data-i18n="copperMap">Cobre</strong><span data-i18n="copperMapP">identidad de IA YAYA</span></p></div><p class="material-statement" data-i18n="materialStatement">La pantalla muestra. El papel conserva.</p></div>
+    <div class="card"><h3 data-i18n="humanH">0,01% humano</h3><p data-i18n="humanP">La tecnología sostiene la infraestructura. El contenido, el sentido y la memoria pertenecen a las personas.</p></div>
+  </div>
+</div>
+</section>
 
-<section class="yaya"><div class="wrap grid"><div class="num">03 / <span>IAIA → YAYA</span></div><div><h2 class="big" data-es="Una tecnología compleja deformada por la empatía." data-en="Complex technology reshaped by empathy.">Una tecnología compleja deformada por la empatía.</h2><div class="wordplay"><span>IA</span><span class="arrow">↓</span><span>YAYA</span></div><p class="copy" data-es="IA YAYA juega con IAIA → YAYA: una forma cariñosa de decir abuela y, al mismo tiempo, el nombre de ese 0,01% incontable. El “nudo de la abuela” representa los recuerdos y saberes que ninguna máquina sabe replicar." data-en="IA YAYA plays with IAIA → YAYA: an affectionate word for grandmother and, at the same time, the name of that uncountable 0.01%. The “grandmother's knot” stands for memories and knowledge no machine can replicate.">IA YAYA juega con IAIA → YAYA: una forma cariñosa de decir abuela y, al mismo tiempo, el nombre de ese 0,01% incontable. El “nudo de la abuela” representa los recuerdos y saberes que ninguna máquina sabe replicar.</p></div></div></section>
+<section class="section">
+<div class="wrap">
+  <div class="section-head"><div class="section-num" data-i18n="sec4">04 · Inteligencia colectiva</div><h2 data-i18n="collectiveTitle">685 co-creadores diarios pueden convertir una calle en una conversación.</h2></div>
+  <div class="grid2">
+    <div class="card"><div class="number">685</div><h3 data-i18n="coH">Co-creadores / día</h3><p data-i18n="coP">La participación cotidiana se convierte en una forma de inteligencia colectiva: diversa, espontánea y humana. El QR no busca espectadores: busca a las personas que dan el paso y dejan algo suyo.</p></div>
+    <div class="card"><div class="number">104</div><h3 data-i18n="winH">Ganadores semanales · 2 años</h3><p data-i18n="winP">Con Sello de Innovador IA YAYA, mentoría, co-creación, vídeos de un minuto y Gala Cotec. 24 serán ganadores mensuales y 2, anuales.</p></div>
+  </div>
+  <p class="statement" data-i18n="opportunityStatement">Cada <em>huella</em> puede abrir una oportunidad: participar, ser reconocido, aprender, co-crear y ayudar a imaginar nuevos empleos alrededor de un conocimiento que antes permanecía invisible.</p>
+</div>
+</section>
 
-<section class="section"><div class="wrap grid"><div class="num">04 / <span data-es="La experiencia" data-en="The experience">La experiencia</span></div><div><h2 class="big" data-es="De peatón a co-creador." data-en="From passer-by to co-creator.">De peatón a co-creador.</h2><div class="steps"><div class="step"><b>01</b><span data-es="Miras" data-en="You look">Miras</span></div><div class="step"><b>02</b><span data-es="Te detienes" data-en="You stop">Te detienes</span></div><div class="step"><b>03</b><span data-es="Escaneas" data-en="You scan">Escaneas</span></div><div class="step"><b>04</b><span data-es="Recuerdas" data-en="You remember">Recuerdas</span></div><div class="step"><b>05</b><span data-es="Compartes" data-en="You share">Compartes</span></div></div><p class="quote" style="margin-top:8vh" data-es="¿Tu idea puede cambiar el mundo hoy? Rétanos en 30 segundos." data-en="Can your idea change the world today? Challenge us in 30 seconds.">¿Tu idea puede cambiar el mundo hoy? Rétanos en 30 segundos.</p><div class="media"><img src="assets/material-grafico-pagina-10.jpg" alt="Planos y material gráfico de IA YAYA"><div class="caption" data-es="Planos, impresora térmica, continuidad expositiva y vinilos" data-en="Plans, thermal printer, exhibition continuity and vinyls">Planos, impresora térmica, continuidad expositiva y vinilos</div></div></div></div></section>
+<section class="section" id="itinerancia">
+<div class="wrap">
+  <div class="section-head"><div class="section-num" data-i18n="sec5">05 · Más allá de Madrid</div><h2 data-i18n="beyondTitle">KNOWCASE es el comienzo, no el final.</h2></div>
+  <p class="lead" data-i18n="beyondLead">IA YAYA está concebida como una instalación 100% desmontable y reutilizable. Tras su recorrido en KNOWCASE puede viajar a otros contextos y comunidades.</p>
+  <div class="grid2" style="margin-top:50px">
+    <div class="card"><h3 data-i18n="euH">Encuentros Cotec Europa</h3><p data-i18n="euP">La pieza puede activar nuevas comunidades en encuentros y espacios de innovación europeos, recogiendo otras memorias, ideas y formas de entender el futuro.</p></div>
+    <div class="card"><h3 data-i18n="travelH">Una biblioteca que viaja</h3><p data-i18n="travelP">Cada destino puede aportar nuevas páginas a la Biblioteca de Recuerdos. La instalación cambia de lugar; la huella humana crece.</p></div>
+  </div>
+  <p class="statement" data-i18n="finalStatement">“Porque la tecnología cambia; las personas siguen dejando <em>huella.</em>”</p>
+</div>
+</section>
 
-<section class="section"><div class="wrap grid"><div class="num">05 / <span data-es="Biblioteca de Recuerdos" data-en="Memory Library">Biblioteca de Recuerdos</span></div><div><h2 class="big" data-es="Una biblioteca que crece en la calle." data-en="A library that grows in the street.">Una biblioteca que crece en la calle.</h2><p class="copy" data-es="Cuando alguien participa, la impresora térmica emite el texto en tiempo real. El microtique cae tras el cristal y se suma físicamente a la Biblioteca de Recuerdos." data-en="When someone participates, the thermal printer outputs the text in real time. The microtique falls behind the glass and physically joins the Memory Library.">Cuando alguien participa, la impresora térmica emite el texto en tiempo real. El microtique cae tras el cristal y se suma físicamente a la Biblioteca de Recuerdos.</p><div class="archive"><article class="card"><div class="q" data-es="“Lo que aprendí de mi abuela no estaba escrito en ningún libro.”" data-en="“What I learned from my grandmother was not written in any book.”">“Lo que aprendí de mi abuela no estaba escrito en ningún libro.”</div><div class="tag">0,01% / memoria</div></article><article class="card"><div class="q" data-es="“Cocinar midiendo a ojo también es conocimiento.”" data-en="“Cooking by eye is knowledge too.”">“Cocinar midiendo a ojo también es conocimiento.”</div><div class="tag">0,01% / saber cotidiano</div></article><article class="card"><div class="q" data-es="“Las cosas esenciales ocurren fuera de la pantalla.”" data-en="“The essential things happen outside the screen.”">“Las cosas esenciales ocurren fuera de la pantalla.”</div><div class="tag">0,01% / intuición</div></article></div><p class="copy" style="margin-top:35px;font-size:.95rem" data-es="La Biblioteca está concebida para crecer y poder reutilizarse como exposición itinerante y como base para futuros informes de Cotec." data-en="The Library is conceived to grow and later be reused as an itinerant exhibition and as a basis for future Cotec reports.">La Biblioteca está concebida para crecer y poder reutilizarse como exposición itinerante y como base para futuros informes de Cotec.</p></div></div></section>
-
-<section id="participa" class="section"><div class="wrap grid"><div class="num">06 / <span data-es="Deja tu 0,01%" data-en="Leave your 0.01%">Deja tu 0,01%</span></div><div><h2 class="big" data-es="¿Qué sabes, recuerdas o haces que merece ser compartido?" data-en="What do you know, remember or do that deserves to be shared?">¿Qué sabes, recuerdas o haces que merece ser compartido?</h2><div class="formbox"><h3 data-es="Rétanos en 30 segundos." data-en="Challenge us in 30 seconds.">Rétanos en 30 segundos.</h3><form onsubmit="event.preventDefault();alert(document.documentElement.lang==='es'?'Esta V2 es la interfaz de candidatura. La Biblioteca de Recuerdos se activará en la fase operativa.':'This V2 is the submission interface. The Memory Library will be activated in the operational phase.');"><label data-es="Idea · máximo 280 caracteres" data-en="Idea · maximum 280 characters">Idea · máximo 280 caracteres</label><textarea maxlength="280" required></textarea><label data-es="Impacto social" data-en="Social impact">Impacto social</label><textarea required></textarea><label data-es="Contacto" data-en="Contact">Contacto</label><input type="text" required><label data-es="Si eres ganador/a, ¿cómo podemos contactarte? · opcional" data-en="If you are selected, how can we contact you? · optional">Si eres ganador/a, ¿cómo podemos contactarte? · opcional</label><input type="text"><p class="hint" data-es="Sin registro obligatorio. En esta versión el formulario no envía ni almacena datos: es una demostración de la experiencia prevista." data-en="No mandatory registration. In this version the form does not send or store data: it demonstrates the intended experience.">Sin registro obligatorio. En esta versión el formulario no envía ni almacena datos: es una demostración de la experiencia prevista.</p><button type="submit" data-es="DEJAR MI 0,01%" data-en="LEAVE MY 0.01%">DEJAR MI 0,01%</button></form></div></div></div></section>
-
-<section class="section"><div class="wrap grid"><div class="num">07 / <span data-es="El proyecto" data-en="The project">El proyecto</span></div><div><h2 class="big">KNOWCASE<br>Fundación Cotec × Sónar+D</h2><p class="copy" data-es="IA YAYA: El escaparate del 0,01% es una instalación urbana e interactiva pensada de forma nativa para el espacio KNOWCASE de la Fundación Cotec en Madrid. Cruza ciencia de datos, arte visual, tecnología e impacto social para convertir al ciudadano en parte activa de la obra." data-en="IA YAYA: The 0.01% showcase is an urban interactive installation conceived natively for Fundación Cotec's KNOWCASE space in Madrid. It combines data science, visual art, technology and social impact to make the citizen an active part of the work.">IA YAYA: El escaparate del 0,01% es una instalación urbana e interactiva pensada de forma nativa para el espacio KNOWCASE de la Fundación Cotec en Madrid. Cruza ciencia de datos, arte visual, tecnología e impacto social para convertir al ciudadano en parte activa de la obra.</p><div class="projectline"><span class="pill">Madrid</span><span class="pill">KNOWCASE</span><span class="pill">0,01%</span><span class="pill">Biblioteca de Recuerdos</span><span class="pill">Interacción urbana</span><span class="pill" style="border-color:var(--yaya);color:var(--yaya-deep)">500K gestos</span><span class="pill" style="border-color:var(--cotec)">Cotec × Sónar+D</span></div></div></div></section>
+<section class="section" id="deja-una-huella">
+<div class="wrap">
+  <div class="section-head"><div class="section-num" data-i18n="sec6">06 · Participa</div><h2 data-i18n="participaTitle">Deja una huella.</h2></div>
+  <div class="formwrap">
+    <div>
+      <p class="lead" data-i18n="participaLead">Esta interfaz reproduce la experiencia prevista al escanear el QR de la instalación. Buscamos a quienes dan el paso: una persona, una vivencia, una nueva posibilidad.</p>
+      <p data-i18n="participaP">La propuesta pide únicamente dos campos obligatorios y un contacto opcional para quienes resulten ganadores. No hay registro obligatorio. Cada aportación amplía una biblioteca que nunca es igual dos veces.</p>
+    </div>
+    <form id="memoryForm">
+      <label><span data-i18n="ideaLabel">Idea · máximo 280 caracteres · obligatorio</span>
+        <input id="idea" name="idea" maxlength="280" required placeholder="Escribe una idea o recuerdo" data-placeholder-en="Write an idea or memory">
+      </label>
+      <label><span data-i18n="impactLabel">Impacto Social · obligatorio</span>
+        <textarea id="impacto" name="impacto" required placeholder="¿Qué podría aportar a otras personas?" data-placeholder-en="What could this contribute to others?"></textarea>
+      </label>
+      <label><span data-i18n="contactLabel">Si eres ganador/a, ¿cómo podemos contactarte? · opcional</span>
+        <input id="contacto" name="contacto" placeholder="Email, web o red social" data-placeholder-en="Email, website or social network">
+      </label>
+      <button type="submit" data-i18n="submit">Dejar mi huella</button>
+      <div class="formnote" data-i18n="formNote">Sin registros obligatorios · carga prevista &lt; 1 segundo · demostración sin envío ni almacenamiento</div>
+      <div class="success" id="success" data-i18n="success">Tu huella está lista para imprimirse. En la instalación física, este momento sucede detrás del cristal.</div>
+    </form>
+  </div>
+</div>
+</section>
 </main>
-<footer class="footer"><div class="wrap footerline"><div>IA YAYA · El escaparate del 0,01%</div><div>2026 · V2.2 · identidad YAYA</div></div></footer>
+
+<footer class="footer">
+<div class="wrap footergrid">
+  <div><h3 data-i18n="footerTitle">IA YAYA</h3><p data-i18n="footerP">El escaparate del 0,01% · Fundación Cotec · KNOWCASE</p></div>
+  <div><p data-i18n="footerTech"><strong>La tecnología</strong><br>es la herramienta.</p></div>
+  <div><p data-i18n="footerPeople"><strong>Las personas</strong><br>dejan la huella.</p></div>
+</div>
+</footer>
 <script>
-const buttons={es:document.getElementById('es'),en:document.getElementById('en')};
-function setLang(lang){document.documentElement.lang=lang;document.querySelectorAll('[data-es]').forEach(el=>{if(el.dataset[lang]!==undefined)el.innerHTML=el.dataset[lang]});buttons.es.classList.toggle('on',lang==='es');buttons.en.classList.toggle('on',lang==='en')}
-buttons.es.onclick=()=>setLang('es');buttons.en.onclick=()=>setLang('en');
+const translations = {
+  en: {
+    ideaNav:'The idea', ecosistemaNav:'Ecosystem', participaNav:'Participate', kicker:'Fundación Cotec · KNOWCASE · Madrid',
+    heroTitle:'The showcase of the <em>0.01%</em>', heroLead:'Technology changes. People keep leaving <em>a mark</em>.', qrLabel:'LEAVE A MARK', qrSmall:'CHALLENGE US IN 30 SECONDS AND LET’S CHANGE THE WORLD TOGETHER',
+    sec1:'01 · The idea', ideaTitle:'What remains of us when a machine can do almost everything?', ideaLead:'IA YAYA starts with a human question. That 0.01% is affection, intuition, common sense, memories and the knowledge we learned from other people. And what is most human is never static: every new experience adds an unrepeatable layer to who we are.', ideaStatement:'“We do not want AI to <em>speak for us</em>; we want it to help us preserve what no database knows how to explain.”', quote:'The “grandmother’s knot” is unforgettable because it marks us. It is a piece of knowledge someone taught us, an experience that stays within us and is unique in time. When we share it, we do more than preserve it: we make room for new experiences to be added and for the archive to keep growing.', iaYayaH:'AI + YAYA', iaYayaP:'We take the most complex technology and reshape it through a child’s empathy: making it close, warm and accessible. AI is not the protagonist. It is the tool that helps preserve what is human.' , traceH:'The unforgettable leaves a mark', traceP:'The “grandmother’s knot” represents what someone taught us and what remains inside us. Every new contribution adds a different experience: a living library, unique in time, turning shared memory into new opportunities for the people who take the step and participate.',
+    sec2:'02 · The experience', expTitle:'A machine prints what a person does not want to lose.', scanH:'Scan', scanP:'The QR opens an optimised mobile web interface.', writeH:'Write', writeP:'Two required fields: Idea, maximum 280 characters, and Social Impact. A third field is optional: “If you are a winner, how can we contact you?”. No mandatory registration.', printH:'Print', printP:'A thermal printer turns the contribution into a physical mark, in real time, behind the glass.', saveH:'Save', saveP:'Each contribution feeds the Memory Library and the mountains of microtiques in the IA YAYA ecosystem.', demoNote:'Designed to load in less than 1 second. On this website, the form is a demonstration: it does not send or store data.',
+    sec3:'03 · IA YAYA ecosystem', ecoTitle:'A library that grows with the street.', libH:'Memory Library', libP:'A living collection of ideas, memories and everyday knowledge contributed by people.', microH:'Microtiques', microP:'Small printed marks that turn participation into visible, accumulable matter.', archH:'The IA YAYA Archivist', archP:'A future job that does not yet exist: it will safeguard, filter and classify the collective knowledge printed on the tickets, keeping it from being trapped behind screens.', materialsH:'Paper + wood + thermal printing + YAYA Copper', materialLanguageH:'The language of materials', paperMap:'Paper', paperMapP:'memory / mark / permanence', screenMap:'Screen', screenMapP:'technology / process / present', woodMap:'Wood', woodMapP:'closeness / everyday life', clayMap:'Clay + plants', clayMapP:'care / growth', copperMap:'Copper', copperMapP:'IA YAYA identity', materialStatement:'The screen shows. The paper preserves.', materialsP:'Paper keeps the memory. Thermal printing leaves the mark. Wood brings the piece closer to everyday life. Clay and plants speak of care and growth. Copper appears on screen. The mark remains on paper.', humanH:'0.01% human', humanP:'Technology supports the infrastructure. The content, meaning and memory belong to people.',
+    sec4:'04 · Collective intelligence', collectiveTitle:'685 co-creators a day can turn a street into a conversation.', coH:'Co-creators / day', coP:'Everyday participation becomes a form of collective intelligence: diverse, spontaneous and human. The QR is not looking for spectators: it is looking for people who take the step and leave something of their own.', winH:'Weekly winners · 2 years', winP:'With the IA YAYA Innovator Seal, mentoring, co-creation, one-minute videos and the Cotec Gala. 24 will be monthly winners and 2 annual winners.',
+    sec5:'05 · Beyond Madrid', beyondTitle:'KNOWCASE is the beginning, not the end.', beyondLead:'IA YAYA is conceived as a 100% dismantlable and reusable installation. After its journey at KNOWCASE, it can travel to other contexts and communities.', euH:'Cotec Europe encounters', euP:'The piece can activate new communities in European innovation encounters and spaces, collecting other memories, ideas and ways of understanding the future.', travelH:'A travelling library', travelP:'Each destination can add new pages to the Memory Library. The installation changes place; the human mark grows.', opportunityStatement:'Every <em>mark</em> can open an opportunity: to participate, be recognised, learn, co-create and help imagine new jobs around knowledge that used to remain invisible.', finalStatement:'“Because technology changes; people keep leaving a <em>mark.</em>”',
+    sec6:'06 · Participate', participaTitle:'Leave a mark.', participaLead:'This interface reproduces the experience planned when scanning the installation QR. We are looking for the people who take the step: one person, one experience, one new possibility.', participaP:'The proposal asks for only two required fields and an optional contact for potential winners. No mandatory registration. Each contribution expands a library that is never the same twice.', ideaLabel:'Idea · maximum 280 characters · required', impactLabel:'Social Impact · required', contactLabel:'If you are a winner, how can we contact you? · optional', submit:'Leave my mark', formNote:'No mandatory registration · expected load < 1 second · demonstration with no sending or storage', success:'Your mark is ready to be printed. In the physical installation, this moment happens behind the glass.', footerTitle:'IA YAYA', footerP:'The showcase of the 0.01% · Fundación Cotec · KNOWCASE', footerTech:'<strong>Technology</strong><br>is the tool.', footerPeople:'<strong>People</strong><br>leave the mark.'
+  }
+};
+let lang='es';
+const original={};
+document.querySelectorAll('[data-i18n]').forEach(el=>original[el.dataset.i18n]=el.innerHTML);
+const placeholders=[...document.querySelectorAll('[data-placeholder-en]')].map(el=>({el,es:el.getAttribute('placeholder'),en:el.dataset.placeholderEn}));
+document.getElementById('langToggle').addEventListener('click',()=>{
+  lang=lang==='es'?'en':'es';
+  document.documentElement.lang=lang;
+  document.querySelectorAll('[data-i18n]').forEach(el=>el.innerHTML=lang==='en'?(translations.en[el.dataset.i18n]||original[el.dataset.i18n]):original[el.dataset.i18n]);
+  placeholders.forEach(x=>x.el.placeholder=lang==='en'?x.en:x.es);
+  const b=document.getElementById('langToggle'); b.textContent=lang==='en'?'ES':'EN'; b.setAttribute('aria-label',lang==='en'?'Cambiar a español':'Switch to English');
+});
 </script>
-</body></html>
+<script>
+document.getElementById('memoryForm').addEventListener('submit',function(e){
+  e.preventDefault();
+  const idea=document.getElementById('idea').value.trim();
+  const impacto=document.getElementById('impacto').value.trim();
+  if(!idea || !impacto) return;
+  document.getElementById('success').style.display='block';
+  this.reset();
+});
+</script>
+</body>
+</html>
