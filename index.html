@@ -3,11 +3,11 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="IA YAYA V8 — El escaparate del 0,01%. Una instalación de Fundación Cotec que pone la tecnología al servicio de la memoria humana.">
+<meta name="description" content="Movimiento 0,01 · IA YAYA. Comparte un saber, un recuerdo o una experiencia.">
 <meta name="theme-color" content="#f4efe5">
-<title>IA YAYA — El escaparate del 0,01%</title>
-  <meta property="og:title" content="IA YAYA — El escaparate del 0,01%">
-  <meta name="twitter:title" content="IA YAYA — El escaparate del 0,01%">
+<title>Movimiento 0,01 · IA YAYA</title>
+  <meta property="og:title" content="Movimiento 0,01 · IA YAYA">
+  <meta name="twitter:title" content="Movimiento 0,01 · IA YAYA">
 <style>
 :root{
   --paper:#f4efe5; --ink:#171614; --muted:#6d675f; --copper:#b87333;
@@ -25,7 +25,7 @@ a{color:inherit}
 .navlinks a{text-decoration:none}
 .lang{background:transparent;color:var(--ink);padding:3px 0;border-bottom:1px solid var(--ink);font:700 11px Arial,sans-serif;letter-spacing:.08em}
 @media(max-width:680px){.navlinks{gap:12px;font-size:11px}.nav{padding:14px 12px}}
-.hero{min-height:100svh;padding:72px 20px 28px;display:grid;place-items:center;position:relative}
+.hero{min-height:min(100svh,720px);padding:72px 20px 28px;display:grid;place-items:center;position:relative}
 .hero-inner{width:min(100%,var(--max));display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:48px;align-items:center}
 .cover{width:100%;max-height:78svh;object-fit:contain;object-position:center;border:1px solid var(--line);background:var(--paper)}
 .hero-copy{max-width:320px}
@@ -84,7 +84,7 @@ button{border:0;background:var(--ink);color:white;padding:13px 18px;font:700 12p
 @media(max-width:760px){
  .section{padding:80px 18px}.section-head,.grid2,.grid3,.formwrap,.footergrid{grid-template-columns:1fr;gap:28px}.gallery{display:block}.gallery img{margin-bottom:12px}.statement{margin-top:45px}
 }
-</style>
+.consent{display:flex;gap:8px;align-items:flex-start;font:13px Arial,sans-serif}.consent input{width:auto;margin-top:3px}.cover-type{width:100%;min-height:420px;display:flex;flex-direction:column;justify-content:center;padding:48px;border:1px solid var(--line);background:var(--white)}.ct-small{font:700 13px Arial,sans-serif;letter-spacing:.2em;color:var(--muted)}.ct-big{font-size:clamp(90px,16vw,220px);line-height:.9;color:var(--copper)}.ct-big span{font-size:.5em}.ct-line{font-size:clamp(20px,2.4vw,30px);margin-top:20px;max-width:520px}@media(max-width:820px){.cover-type{min-height:260px;padding:28px}}.tallybox{border:1px solid var(--line);background:var(--white);padding:12px;min-height:200px}</style>
 
 <style>
 .qr-link {
@@ -99,167 +99,33 @@ button{border:0;background:var(--ink);color:white;padding:13px 18px;font:700 12p
 }
 </style>
 
-</head>
+<style>.plain{font-size:20px;max-width:760px}.small{font:14px/1.5 Arial,sans-serif;color:#4a453e;max-width:760px}.tallybox{min-height:420px}details{margin-top:12px}details summary{cursor:pointer}details p{margin:10px 0}.section{padding:80px 20px}.formwrap{gap:50px}</style>
+<style>.hero h1{font-size:clamp(34px,4vw,54px)!important}.small{font-size:16px!important}</style></head>
 <body>
-<header class="nav">
-  <a class="brand" href="#inicio">IA YAYA</a>
-  <nav class="navlinks" aria-label="Navegación">
-    <a href="#idea" data-i18n="ideaNav">La idea</a><a href="#ecosistema" data-i18n="ecosistemaNav">Ecosistema</a><a href="#deja-una-huella" data-i18n="participaNav">Participa</a>
-    <button class="lang" id="langToggle" type="button" aria-label="Switch to English">EN</button>
-  </nav>
-</header>
-
+<header class="nav"><a class="brand" href="#inicio">IA YAYA</a>
+<nav class="navlinks" aria-label="Navegación"><a href="#comparte" data-i18n="nav1">Comparte</a><a href="#encuentra" data-i18n="nav2">Encuentra</a><a href="#nace" data-i18n="nav3">Cómo nace</a>
+<button class="lang" id="langToggle" type="button" aria-label="Switch to English">EN</button></nav></header>
 <main id="inicio">
-<section class="hero">
-  <div class="hero-inner">
-    <img class="cover" src="assets/cover-image.jpg" alt="Imagen de IA YAYA">
-    <div class="hero-copy">
-      <div class="kicker" data-i18n="kicker">Fundación Cotec · KNOWCASE · Madrid</div>
-      <h1 data-i18n="heroTitle">El escaparate del <em>0,01%</em></h1>
-      <p data-i18n="heroLead">La tecnología cambia. Las personas siguen dejando <em>huella</em>.</p>
-      <div class="qrbox">
-        <div class="qrlabel" data-i18n="qrLabel">DEJA UNA HUELLA</div>
-        <a class="qr-link" href="https://iayaya.es/#deja-una-huella" aria-label="Deja una huella" title="Deja una huella"><img class="qr" src="assets/qr-iayaya.png" alt="Código QR para entrar en IA YAYA"></a>
-        <div class="qrsmall" data-i18n="qrSmall">RÉTANOS EN 30 SEGUNDOS Y CAMBIEMOS JUNTOS EL MUNDO</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="section" id="idea">
-<div class="wrap">
-  <div class="section-head"><div class="section-num" data-i18n="sec1">01 · La idea</div><h2 data-i18n="ideaTitle">¿Qué queda de nosotros cuando una máquina puede hacerlo casi todo?</h2></div>
-  <p class="lead" data-i18n="ideaLead">IA YAYA nace de una pregunta humana. Ese 0,01% son los afectos, la intuición, el sentido común, los recuerdos y los saberes que aprendimos de otras personas. Y lo más humano no es estático: cada nueva vivencia añade una capa irrepetible a lo que somos.</p>
-  <p class="statement" data-i18n="ideaStatement">“No queremos que la IA <em>hable por nosotros</em>; queremos que nos ayude a guardar aquello que ninguna base de datos sabe explicar.”</p>
-  <div class="grid2">
-    <div class="quote" data-i18n="quote">El “nudo de la abuela” (es decir, la IA YAYA) es inolvidable porque nos marca. Es un saber que alguien nos enseñó, una vivencia que queda dentro de nosotros y que es única en el tiempo. Cuando la compartimos, no solo la conservamos: hacemos sitio para que otras personas añadan nuevas vivencias y el archivo siga creciendo.</div>
-    <div class="card"><h3 data-i18n="iaYayaH">IA + YAYA</h3><p data-i18n="iaYayaP">Tomamos la tecnología más compleja y la deformamos mediante la empatía de un niño: la hacemos cercana, tierna y accesible. La IA no es la protagonista. Es la herramienta que ayuda a conservar lo humano.</p></div>
-    <div class="card"><h3 data-i18n="traceH">Lo inolvidable deja huella</h3><p data-i18n="traceP">El “nudo de la abuela” representa aquello que nos enseñaron y que permanece en nosotros. Cada nueva participación suma una vivencia distinta: una biblioteca viva, única en el tiempo, que convierte memoria compartida en nuevas oportunidades para quienes dan el paso y participan.</p></div>
-  </div>
-</div>
-</section>
-
-<section class="section" id="experiencia">
-<div class="wrap">
-  <div class="section-head"><div class="section-num" data-i18n="sec2">02 · La experiencia</div><h2 data-i18n="expTitle">Una máquina imprime lo que una persona no quiere perder.</h2></div>
-  <div class="steps">
-    <div class="step"><div><h3 data-i18n="scanH">Escanea</h3><p data-i18n="scanP">El QR abre una interfaz web móvil optimizada.</p></div></div>
-    <div class="step"><div><h3 data-i18n="writeH">Escribe</h3><p data-i18n="writeP">Dos campos obligatorios: Idea, máximo 280 caracteres, e Impacto Social. Un tercer campo opcional: “Si eres ganador/a, ¿cómo podemos contactarte?”. Sin registros obligatorios.</p></div></div>
-    <div class="step"><div><h3 data-i18n="printH">Imprime</h3><p data-i18n="printP">Una impresora térmica convierte la aportación en una huella física, en tiempo real, detrás del cristal.</p></div></div>
-    <div class="step"><div><h3 data-i18n="saveH">Se guarda</h3><p data-i18n="saveP">Cada aportación alimenta la Biblioteca de Recuerdos y las montañas de microtiques del ecosistema IA YAYA.</p></div></div>
-  </div>
-  <p class="formnote" data-i18n="demoNote">Experiencia diseñada para cargar en menos de 1 segundo. En esta web, el formulario es una demostración: no envía ni almacena datos.</p>
-</div>
-</section>
-
-<section class="section" id="ecosistema">
-<div class="wrap">
-  <div class="section-head"><div class="section-num" data-i18n="sec3">03 · Ecosistema IA YAYA</div><h2 data-i18n="ecoTitle">Una biblioteca que crece con la calle.</h2></div>
-  <div class="grid3">
-    <div class="card"><div class="number">01</div><h3 data-i18n="libH">Biblioteca de Recuerdos</h3><p data-i18n="libP">Una colección viva de ideas, recuerdos y saberes cotidianos aportados por personas.</p></div>
-    <div class="card"><div class="number">02</div><h3 data-i18n="microH">Microtiques</h3><p data-i18n="microP">Pequeñas huellas impresas que convierten la participación en materia visible y acumulable.</p></div>
-    <div class="card"><div class="number">03</div><h3 data-i18n="archH">El Archivero IA YAYA</h3><p data-i18n="archP">Un empleo del futuro que todavía no existe: custodiará, filtrará y clasificará los saberes colectivos impresos en los tiques, evitando que queden atrapados tras las pantallas.</p></div>
-  </div>
-  <img class="implant" src="assets/implantacion-dia-noche.png" alt="Implantación de IA YAYA de día y de noche">
-  <div class="grid2" style="margin-top:50px">
-    <div class="card"><h3 data-i18n="materialsH">Papel + madera + impresión térmica + Cobre YAYA</h3><p data-i18n="materialsP">El papel guarda la memoria. La impresión térmica deja la huella. La madera acerca la pieza a lo cotidiano. La arcilla y las plantas hablan de cuidado y crecimiento. En la pantalla aparece el cobre. En el papel queda la huella.</p></div>
-    <div class="card"><h3 data-i18n="materialLanguageH">El lenguaje de los materiales</h3><div class="material-map"><p><strong data-i18n="paperMap">Papel</strong><span data-i18n="paperMapP">memoria / huella / permanencia</span></p><p><strong data-i18n="screenMap">Pantalla</strong><span data-i18n="screenMapP">tecnología / proceso / presente</span></p><p><strong data-i18n="woodMap">Madera</strong><span data-i18n="woodMapP">cercanía / cotidiano</span></p><p><strong data-i18n="clayMap">Arcilla + plantas</strong><span data-i18n="clayMapP">cuidado / crecimiento</span></p><p><strong data-i18n="copperMap">Cobre</strong><span data-i18n="copperMapP">identidad de IA YAYA</span></p></div><p class="material-statement" data-i18n="materialStatement">La pantalla muestra. El papel conserva.</p></div>
-    <div class="card"><h3 data-i18n="humanH">0,01% humano</h3><p data-i18n="humanP">La tecnología sostiene la infraestructura. El contenido, el sentido y la memoria pertenecen a las personas.</p></div>
-  </div>
-</div>
-</section>
-
-<section class="section">
-<div class="wrap">
-  <div class="section-head"><div class="section-num" data-i18n="sec4">04 · Inteligencia colectiva</div><h2 data-i18n="collectiveTitle">685 co-creadores diarios pueden convertir una calle en una conversación.</h2></div>
-  <div class="grid2">
-    <div class="card"><div class="number">685</div><h3 data-i18n="coH">Co-creadores / día</h3><p data-i18n="coP">La participación cotidiana se convierte en una forma de inteligencia colectiva: diversa, espontánea y humana. El QR no busca espectadores: busca a las personas que dan el paso y dejan algo suyo.</p></div>
-    <div class="card"><div class="number">104</div><h3 data-i18n="winH">Ganadores semanales · 2 años</h3><p data-i18n="winP">Con Sello de Innovador IA YAYA, mentoría, co-creación, vídeos de un minuto y Gala Cotec. 24 serán ganadores mensuales y 2, anuales.</p></div>
-  </div>
-  <p class="statement" data-i18n="opportunityStatement">Cada <em>huella</em> puede abrir una oportunidad: participar, ser reconocido, aprender, co-crear y ayudar a imaginar nuevos empleos alrededor de un conocimiento que antes permanecía invisible.</p>
-</div>
-</section>
-
-<section class="section" id="itinerancia">
-<div class="wrap">
-  <div class="section-head"><div class="section-num" data-i18n="sec5">05 · Más allá de Madrid</div><h2 data-i18n="beyondTitle">KNOWCASE es el comienzo, no el final.</h2></div>
-  <p class="lead" data-i18n="beyondLead">IA YAYA está concebida como una instalación 100% desmontable y reutilizable. Tras su recorrido en KNOWCASE puede viajar a otros contextos y comunidades.</p>
-  <div class="grid2" style="margin-top:50px">
-    <div class="card"><h3 data-i18n="euH">Encuentros Cotec Europa</h3><p data-i18n="euP">La pieza puede activar nuevas comunidades en encuentros y espacios de innovación europeos, recogiendo otras memorias, ideas y formas de entender el futuro.</p></div>
-    <div class="card"><h3 data-i18n="travelH">Una biblioteca que viaja</h3><p data-i18n="travelP">Cada destino puede aportar nuevas páginas a la Biblioteca de Recuerdos. La instalación cambia de lugar; la huella humana crece.</p></div>
-  </div>
-  <p class="statement" data-i18n="finalStatement">“Porque la tecnología cambia; las personas siguen dejando <em>huella.</em>”</p>
-</div>
-</section>
-
-<section class="section" id="deja-una-huella">
-<div class="wrap">
-  <div class="section-head"><div class="section-num" data-i18n="sec6">06 · Participa</div><h2 data-i18n="participaTitle">Deja una huella.</h2></div>
-  <div class="formwrap">
-    <div>
-      <p class="lead" data-i18n="participaLead">Esta interfaz reproduce la experiencia prevista al escanear el QR de la instalación. Buscamos a quienes dan el paso: una persona, una vivencia, una nueva posibilidad.</p>
-      <p data-i18n="participaP">La propuesta pide únicamente dos campos obligatorios y un contacto opcional para quienes resulten ganadores. No hay registro obligatorio. Cada aportación amplía una biblioteca que nunca es igual dos veces.</p>
-    </div>
-    <form id="memoryForm">
-      <label><span data-i18n="ideaLabel">Idea · máximo 280 caracteres · obligatorio</span>
-        <input id="idea" name="idea" maxlength="280" required placeholder="Escribe una idea o recuerdo" data-placeholder-en="Write an idea or memory">
-      </label>
-      <label><span data-i18n="impactLabel">Impacto Social · obligatorio</span>
-        <textarea id="impacto" name="impacto" required placeholder="¿Qué podría aportar a otras personas?" data-placeholder-en="What could this contribute to others?"></textarea>
-      </label>
-      <label><span data-i18n="contactLabel">Si eres ganador/a, ¿cómo podemos contactarte? · opcional</span>
-        <input id="contacto" name="contacto" placeholder="Email, web o red social" data-placeholder-en="Email, website or social network">
-      </label>
-      <button type="submit" data-i18n="submit">Dejar mi huella</button>
-      <div class="formnote" data-i18n="formNote">Sin registros obligatorios · carga prevista &lt; 1 segundo · demostración sin envío ni almacenamiento</div>
-      <div class="success" id="success" data-i18n="success">Tu huella está lista para imprimirse. En la instalación física, este momento sucede detrás del cristal.</div>
-    </form>
-  </div>
-</div>
-</section>
+<section class="hero"><div class="hero-inner">
+<div class="cover-type" role="img" aria-label="0,01%"><div class="ct-small">IA YAYA</div><div class="ct-big">0,01<span>%</span></div><div class="ct-line" data-i18n="ctLine">Lo que ninguna máquina puede hacer por nosotros.</div></div>
+<div class="hero-copy"><div class="kicker" data-i18n="kicker">IA YAYA · Movimiento 0,01</div><h1 data-i18n="heroTitle">Movimiento <em>0,01</em></h1><p data-i18n="heroLead">La tecnología cambia. Las personas siguen dejando <em>huella</em>.</p>
+<div class="qrbox"><div class="qrlabel" data-i18n="qrLabel">COMPARTE</div><a class="qr-link" href="https://iayaya.es/#comparte" aria-label="Comparte"><img class="qr" src="assets/qr-iayaya.png" alt="Código QR de iayaya.es"></a><div class="qrsmall" data-i18n="qrSmall">ESCANEA, CUÉNTANOS Y PASA EL ENLACE A QUIEN QUIERAS</div></div></div></div></section>
+<section class="section"><div class="wrap"><h2 data-i18n="whatT">Un movimiento abierto a todas las personas.</h2><p class="plain" data-i18n="nameP">IA YAYA une la inteligencia artificial con la cercanía de una yaya, una abuela. La IA es ese 99,999 infinito; el 0,01 es también infinito. Los dos son símbolos, no estadísticas. Lo humano nos identifica para siempre.</p><p class="plain" data-i18n="whatP">IA YAYA parte de una idea sencilla: lo que sabemos, recordamos y hemos vivido también cuenta. Compartirlo y conversar sobre ello nos puede hacer aprender juntos. Es un movimiento virtual y global: se puede entrar desde cualquier lugar, con el QR o con el enlace.</p></div></section>
+<span id="deja-una-huella"></span><section class="section" id="comparte"><div class="wrap">
+<div class="section-head"><div class="section-num" data-i18n="n1">1 · Comparte</div><h2 data-i18n="shareT">Cuéntanos algo tuyo.</h2></div>
+<div class="formwrap"><div><p class="lead" data-i18n="shareLead">Cuéntanos brevemente un saber, un recuerdo o una experiencia tuya.</p><p class="plain" data-i18n="shareP">No tiene que servir para nada concreto. No hace falta crear cuenta. Dejar un contacto es opcional.</p><div class="small" data-i18n="priv"><strong>Por ahora, participación desde España, a partir de 14 años.</strong> Estamos preparando la participación de menores de 14 años y la apertura a otros países, sin fecha todavía. La web se puede leer desde cualquier lugar.<br><details><summary><strong>Qué pasa con lo que envías</strong></summary><p>La iniciativa sin ánimo de lucro <a href="https://globalstartupcities.com/">Global Startup Cities</a> impulsa IA YAYA. El responsable de los datos es Global StartupCities, CIF G74460304. Puedes escribirnos a arturo.villar@globalstartupcities.com.</p><p>Usamos tu aportación para gestionar tu participación en IA YAYA y el movimiento 0,01 y conocer los saberes y experiencias que quieres compartir. Si dejas un correo o un teléfono, lo usaremos para responderte sobre tu aportación. El contacto es opcional. La base jurídica es tu consentimiento, que puedes retirar cuando quieras. Sin la aportación y tu consentimiento no podemos recibir tu participación por este formulario.</p><p>No publicaremos tu aportación ni tu contacto, ni te enviaremos invitaciones a encuentros, sin pedirte permiso aparte. No incluyas datos personales de otras personas ni información sobre salud, creencias, vida sexual u otros asuntos íntimos.</p><p>Utilizamos Tally como proveedor del formulario y encargado del tratamiento. Tally indica que almacena las respuestas en Europa y utiliza proveedores para prestar el servicio. Su acuerdo contempla transferencias internacionales cuando sean necesarias, con las garantías previstas por la normativa. Condiciones de tratamiento: <a href="https://tally.so/help/data-processing-agreement">tally.so/help/data-processing-agreement</a>. Aviso de privacidad de Tally: <a href="https://tally.so/help/privacy-policy">tally.so/help/privacy-policy</a>.</p><p>Conservaremos tu aportación y el contacto, si lo dejas, durante un máximo de 12 meses desde el envío, o hasta que pidas su supresión cuando proceda. Tras el borrado pueden quedar copias técnicas del proveedor durante un máximo de 90 días, según la información de Tally.</p><p>Puedes pedir acceso, rectificación o supresión de tus datos, limitación del tratamiento, portabilidad y, cuando proceda, oposición. También puedes retirar tu consentimiento, sin que eso afecte al uso lícito anterior a la retirada. Escribe a arturo.villar@globalstartupcities.com; si no dejaste contacto, indícanos información suficiente para localizar tu aportación, sin enviar datos innecesarios. Puedes reclamar ante la <a href="https://www.aepd.es/">Agencia Española de Protección de Datos</a>.</p></details></div></div>
+<div class="tallybox"><iframe data-tally-src="https://tally.so/embed/xVXEPy?hideTitle=1&transparentBackground=1&dynamicHeight=1" loading="lazy" width="100%" height="420" frameborder="0" title="Comparte"></iframe><noscript><p><a href="https://tally.so/r/xVXEPy">Abrir el formulario</a></p></noscript></div></div></div></section>
+<section class="section" id="encuentra"><div class="wrap"><div class="section-head"><div class="section-num" data-i18n="n2">2 · Encuentra</div><h2 data-i18n="meetT">Y después, conversar cara a cara.</h2></div><p class="lead" data-i18n="meetP">Es la intención del movimiento: crear momentos de encuentro entre personas, de una en una o en grupo. Cuando alguien cuenta y otro escucha, pueden nacer aprendizajes, ideas e incluso proyectos. Ninguna pantalla ni programa sustituye ese encuentro. Aún no hay fechas ni lugares.</p></div></section>
+<section class="section"><div class="wrap"><div class="section-head"><div class="section-num" data-i18n="n3">3 · Reconocer</div><h2 data-i18n="recT">Queremos reconocer las aportaciones.</h2></div><p class="plain" data-i18n="recP">Queremos reconocer las aportaciones cada semana, cada mes y cada año, también de forma virtual. Pronto daremos a conocer cómo.</p></div></section>
+<section class="section" id="nace"><div class="wrap"><div class="section-head"><div class="section-num" data-i18n="n4">4 · Cómo nace</div><h2 data-i18n="bornT">De dónde viene.</h2></div><p class="plain" data-i18n="bornP">El movimiento 0,01 nace de IA YAYA, nuestra propuesta para la convocatoria KNOWCASE de la Fundación Cotec y Sónar+D (pendiente de conocer el resultado). Sea cual sea el resultado, el movimiento ya está en marcha. Gracias a la Fundación Cotec y a Sónar+D por la convocatoria que nos puso en marcha.</p></div></section>
 </main>
-
-<footer class="footer">
-<div class="wrap footergrid">
-  <div><h3 data-i18n="footerTitle">IA YAYA</h3><p data-i18n="footerP">El escaparate del 0,01% · Fundación Cotec · KNOWCASE</p></div>
-  <div><p data-i18n="footerTech"><strong>La tecnología</strong><br>es la herramienta.</p></div>
-  <div><p data-i18n="footerPeople"><strong>Las personas</strong><br>dejan la huella.</p></div>
-</div>
-</footer>
+<footer class="footer"><div class="wrap footergrid"><div><h3 data-i18n="fT">IA YAYA</h3><p data-i18n="fP">Movimiento 0,01</p></div><div><p data-i18n="fA"><strong>La tecnología</strong><br>es la herramienta.</p></div><div><p data-i18n="fB"><strong>Las personas</strong><br>dejan la huella.</p></div></div></footer>
 <script>
-const translations = {
-  en: {
-    ideaNav:'The idea', ecosistemaNav:'Ecosystem', participaNav:'Participate', kicker:'Fundación Cotec · KNOWCASE · Madrid',
-    heroTitle:'The showcase of the <em>0.01%</em>', heroLead:'Technology changes. People keep leaving <em>a mark</em>.', qrLabel:'LEAVE A MARK', qrSmall:'CHALLENGE US IN 30 SECONDS AND LET’S CHANGE THE WORLD TOGETHER',
-    sec1:'01 · The idea', ideaTitle:'What remains of us when a machine can do almost everything?', ideaLead:'IA YAYA starts with a human question. That 0.01% is affection, intuition, common sense, memories and the knowledge we learned from other people. And what is most human is never static: every new experience adds an unrepeatable layer to who we are.', ideaStatement:'“We do not want AI to <em>speak for us</em>; we want it to help us preserve what no database knows how to explain.”', quote:'The “grandmother’s knot” (that is, IA YAYA) is unforgettable because it marks us. It is a piece of knowledge someone taught us, an experience that stays within us and is unique in time. When we share it, we do more than preserve it: we make room for new experiences to be added and for the archive to keep growing.', iaYayaH:'AI + YAYA', iaYayaP:'We take the most complex technology and reshape it through a child’s empathy: making it close, warm and accessible. AI is not the protagonist. It is the tool that helps preserve what is human.' , traceH:'The unforgettable leaves a mark', traceP:'The “grandmother’s knot” represents what someone taught us and what remains inside us. Every new contribution adds a different experience: a living library, unique in time, turning shared memory into new opportunities for the people who take the step and participate.',
-    sec2:'02 · The experience', expTitle:'A machine prints what a person does not want to lose.', scanH:'Scan', scanP:'The QR opens an optimised mobile web interface.', writeH:'Write', writeP:'Two required fields: Idea, maximum 280 characters, and Social Impact. A third field is optional: “If you are a winner, how can we contact you?”. No mandatory registration.', printH:'Print', printP:'A thermal printer turns the contribution into a physical mark, in real time, behind the glass.', saveH:'Save', saveP:'Each contribution feeds the Memory Library and the mountains of microtiques in the IA YAYA ecosystem.', demoNote:'Designed to load in less than 1 second. On this website, the form is a demonstration: it does not send or store data.',
-    sec3:'03 · IA YAYA ecosystem', ecoTitle:'A library that grows with the street.', libH:'Memory Library', libP:'A living collection of ideas, memories and everyday knowledge contributed by people.', microH:'Microtiques', microP:'Small printed marks that turn participation into visible, accumulable matter.', archH:'The IA YAYA Archivist', archP:'A future job that does not yet exist: it will safeguard, filter and classify the collective knowledge printed on the tickets, keeping it from being trapped behind screens.', materialsH:'Paper + wood + thermal printing + YAYA Copper', materialLanguageH:'The language of materials', paperMap:'Paper', paperMapP:'memory / mark / permanence', screenMap:'Screen', screenMapP:'technology / process / present', woodMap:'Wood', woodMapP:'closeness / everyday life', clayMap:'Clay + plants', clayMapP:'care / growth', copperMap:'Copper', copperMapP:'IA YAYA identity', materialStatement:'The screen shows. The paper preserves.', materialsP:'Paper keeps the memory. Thermal printing leaves the mark. Wood brings the piece closer to everyday life. Clay and plants speak of care and growth. Copper appears on screen. The mark remains on paper.', humanH:'0.01% human', humanP:'Technology supports the infrastructure. The content, meaning and memory belong to people.',
-    sec4:'04 · Collective intelligence', collectiveTitle:'685 co-creators a day can turn a street into a conversation.', coH:'Co-creators / day', coP:'Everyday participation becomes a form of collective intelligence: diverse, spontaneous and human. The QR is not looking for spectators: it is looking for people who take the step and leave something of their own.', winH:'Weekly winners · 2 years', winP:'With the IA YAYA Innovator Seal, mentoring, co-creation, one-minute videos and the Cotec Gala. 24 will be monthly winners and 2 annual winners.',
-    sec5:'05 · Beyond Madrid', beyondTitle:'KNOWCASE is the beginning, not the end.', beyondLead:'IA YAYA is conceived as a 100% dismantlable and reusable installation. After its journey at KNOWCASE, it can travel to other contexts and communities.', euH:'Cotec Europe encounters', euP:'The piece can activate new communities in European innovation encounters and spaces, collecting other memories, ideas and ways of understanding the future.', travelH:'A travelling library', travelP:'Each destination can add new pages to the Memory Library. The installation changes place; the human mark grows.', opportunityStatement:'Every <em>mark</em> can open an opportunity: to participate, be recognised, learn, co-create and help imagine new jobs around knowledge that used to remain invisible.', finalStatement:'“Because technology changes; people keep leaving a <em>mark.</em>”',
-    sec6:'06 · Participate', participaTitle:'Leave a mark.', participaLead:'This interface reproduces the experience planned when scanning the installation QR. We are looking for the people who take the step: one person, one experience, one new possibility.', participaP:'The proposal asks for only two required fields and an optional contact for potential winners. No mandatory registration. Each contribution expands a library that is never the same twice.', ideaLabel:'Idea · maximum 280 characters · required', impactLabel:'Social Impact · required', contactLabel:'If you are a winner, how can we contact you? · optional', submit:'Leave my mark', formNote:'No mandatory registration · expected load < 1 second · demonstration with no sending or storage', success:'Your mark is ready to be printed. In the physical installation, this moment happens behind the glass.', footerTitle:'IA YAYA', footerP:'The showcase of the 0.01% · Fundación Cotec · KNOWCASE', footerTech:'<strong>Technology</strong><br>is the tool.', footerPeople:'<strong>People</strong><br>leave the mark.'
-  }
-};
-let lang='es';
-const original={};
+const translations={en:{"nav1": "Share", "nav2": "Meet", "nav3": "Origin", "kicker": "IA YAYA · The 0.01 Movement", "heroTitle": "The <em>0.01</em> Movement", "heroLead": "Technology changes. People keep leaving <em>a mark</em>.", "qrLabel": "SHARE", "qrSmall": "SCAN, TELL US, AND PASS THE LINK ON TO ANYONE", "ctLine": "What no machine can do for us.", "whatT": "A movement open to everyone.", "nameP": "IA YAYA brings together artificial intelligence and the warmth of a \"yaya\", an affectionate Spanish word for grandmother. AI is that infinite 99.999; the 0.01 is infinite too. Both are symbols, not statistics. What is human will always be what identifies us.", "whatP": "IA YAYA starts from a simple idea: what we know, remember and have lived also counts. Sharing it and talking about it can help us learn together. It is a virtual, global movement: you can join from anywhere, with the QR or the link.", "n1": "1 · Share", "shareT": "Tell us something of yours.", "shareLead": "Briefly tell us a piece of know-how, a memory or an experience of yours.", "shareP": "It does not have to be useful for anything in particular. No account needed. Leaving a contact is optional.", "priv": "<strong>For now, participation is from Spain, aged 14 or over.</strong> We are preparing a way for children under 14 to take part and for people in other countries to join, with no date yet. The website can be read from anywhere.<br><details><summary><strong>What happens to what you send</strong></summary><p>The non-profit initiative <a href=\"https://globalstartupcities.com/\">Global Startup Cities</a> drives IA YAYA. The data controller is Global StartupCities, tax ID G74460304. You can write to us at arturo.villar@globalstartupcities.com.</p><p>We use your contribution to manage your participation in IA YAYA and the 0.01 Movement and to learn about the know-how and experiences you want to share. If you leave an email or a phone number, we will use it to reply to you about your contribution. Contact details are optional. The legal basis is your consent, which you can withdraw at any time. Without the contribution and your consent we cannot receive your participation through this form.</p><p>We will not publish your contribution or your contact details, or send you invitations to meetings, without asking your permission separately. Do not include other people’s personal details or information about health, beliefs, sex life or other private matters.</p><p>We use Tally as the form provider and data processor. Tally states that it stores responses in Europe and uses providers to deliver the service. Its agreement covers international transfers where necessary, with the safeguards required by law. Processing terms: <a href=\"https://tally.so/help/data-processing-agreement\">tally.so/help/data-processing-agreement</a>. Tally privacy notice: <a href=\"https://tally.so/help/privacy-policy\">tally.so/help/privacy-policy</a>.</p><p>We will keep your contribution and your contact details, if you leave them, for a maximum of 12 months from submission, or until you ask for deletion where applicable. After deletion, technical copies may remain with the provider for up to 90 days, according to Tally’s information.</p><p>You can ask for access, rectification or erasure of your data, restriction of processing, portability and, where applicable, objection. You can also withdraw your consent, without affecting lawful use before withdrawal. Write to arturo.villar@globalstartupcities.com; if you left no contact, give us enough information to find your contribution, without sending unnecessary data. You can complain to the <a href=\"https://www.aepd.es/\">Spanish Data Protection Agency (AEPD)</a>.</p></details>", "n2": "2 · Meet", "meetT": "And then, talk face to face.", "meetP": "This is the movement’s intention: to create moments where people meet, one to one or in groups. When one person tells and another listens, learning, ideas and even projects can arise. No screen or programme replaces that meeting. There are no dates or places yet.", "n3": "3 · Recognition", "recT": "We want to recognise contributions.", "recP": "We want to recognise contributions every week, every month and every year, including virtually. We will soon share how.", "n4": "4 · Origin", "bornT": "Where it comes from.", "bornP": "The 0.01 movement is born from IA YAYA, our proposal for the KNOWCASE call by the Cotec Foundation and Sónar+D (result still pending). Whatever the result, the movement is already under way. Thank you to the Cotec Foundation and Sónar+D for the call that set us in motion.", "fT": "IA YAYA", "fP": "The 0.01 Movement", "fA": "<strong>Technology</strong><br>is the tool.", "fB": "<strong>People</strong><br>leave the mark.", "contact": "If you would like us to be able to contact you, leave an email or a phone number. If not, you can still share."}};
+let lang='es';window.addEventListener('load',()=>{if(location.hash=='#en')document.getElementById('langToggle').click();});const original={};
 document.querySelectorAll('[data-i18n]').forEach(el=>original[el.dataset.i18n]=el.innerHTML);
-const placeholders=[...document.querySelectorAll('[data-placeholder-en]')].map(el=>({el,es:el.getAttribute('placeholder'),en:el.dataset.placeholderEn}));
-document.getElementById('langToggle').addEventListener('click',()=>{
-  lang=lang==='es'?'en':'es';
-  document.documentElement.lang=lang;
-  document.querySelectorAll('[data-i18n]').forEach(el=>el.innerHTML=lang==='en'?(translations.en[el.dataset.i18n]||original[el.dataset.i18n]):original[el.dataset.i18n]);
-  placeholders.forEach(x=>x.el.placeholder=lang==='en'?x.en:x.es);
-  const b=document.getElementById('langToggle'); b.textContent=lang==='en'?'ES':'EN'; b.setAttribute('aria-label',lang==='en'?'Cambiar a español':'Switch to English');
-});
+document.getElementById('langToggle').addEventListener('click',()=>{lang=lang==='es'?'en':'es';document.documentElement.lang=lang;
+document.querySelectorAll('[data-i18n]').forEach(el=>el.innerHTML=lang==='en'?(translations.en[el.dataset.i18n]||original[el.dataset.i18n]):original[el.dataset.i18n]);
+const f=document.querySelector('iframe[data-tally-src]');if(f){const id=lang==='en'?'Ar7N10':'xVXEPy';f.dataset.tallySrc=f.dataset.tallySrc.replace(/embed\/\w+/,'embed/'+id);if(f.getAttribute('src'))f.src=f.dataset.tallySrc;}const b=document.getElementById('langToggle');b.textContent=lang==='en'?'ES':'EN';b.setAttribute('aria-label',lang==='en'?'Cambiar a español':'Switch to English');});
 </script>
-<script>
-document.getElementById('memoryForm').addEventListener('submit',function(e){
-  e.preventDefault();
-  const idea=document.getElementById('idea').value.trim();
-  const impacto=document.getElementById('impacto').value.trim();
-  if(!idea || !impacto) return;
-  document.getElementById('success').style.display='block';
-  this.reset();
-});
-</script>
-</body>
-</html>
+<script src="https://tally.so/widgets/embed.js"></script><script>if(window.Tally){Tally.loadEmbeds();}else{document.querySelectorAll("iframe[data-tally-src]:not([src])").forEach(function(e){e.src=e.dataset.tallySrc;});}</script></body></html>
