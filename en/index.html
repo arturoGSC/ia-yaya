@@ -206,4 +206,42 @@ document.getElementById('langToggle').addEventListener('click',()=>{lang=lang===
 document.querySelectorAll('[data-i18n]').forEach(el=>el.innerHTML=lang==='es'?(translations.es[el.dataset.i18n]||original[el.dataset.i18n]):original[el.dataset.i18n]);
 document.querySelector('.cover-type').setAttribute('aria-label',lang==='en'?'0.01%':'0,01%');const f=document.querySelector('iframe[data-tally-src]');if(f){const id=lang==='en'?'Ar7N10':'xVXEPy';f.dataset.tallySrc=f.dataset.tallySrc.replace(/embed\/\w+/,'embed/'+id);if(f.getAttribute('src'))f.src=f.dataset.tallySrc;}const b=document.getElementById('langToggle');b.textContent=lang==='en'?'ES':'EN';b.setAttribute('aria-label',lang==='en'?'Cambiar a español':'Switch to English');const want=lang==='en'?'Ar7N10':'xVXEPy';let n=0;const fix=setInterval(()=>{const g=document.querySelector('iframe[data-tally-src]');if(g){const cur=g.getAttribute('src')||'';if(cur&&cur.indexOf('/embed/'+want)<0){g.dataset.tallySrc=g.dataset.tallySrc.replace(/embed\/\w+/,'embed/'+want);g.src=cur.replace(/embed\/\w+/,'embed/'+want);}}if(++n>20)clearInterval(fix);},500);history.replaceState(null,'',(lang==='en'?'/en/':'/')+(location.hash==='#en'?'':location.hash));});
 </script>
-<script src="https://tally.so/widgets/embed.js"></script><script>if(window.Tally){Tally.loadEmbeds();}else{document.querySelectorAll("iframe[data-tally-src]:not([src])").forEach(function(e){e.src=e.dataset.tallySrc;});}</script><script>window.addEventListener('message',function(e){if(e.origin!=='https://tally.so')return;var f=document.querySelector('.tallybox iframe');if(!f||e.source!==f.contentWindow)return;if(typeof e.data!=='string'||e.data.indexOf('[iFrameSizer]')!==0)return;var h=parseInt(e.data.slice(13).split(':')[1],10);if(h>=100&&h<=10000&&f.style.height!==h+'px')f.style.height=h+'px';});</script></body></html>
+<script src="https://tally.so/widgets/embed.js"></script><script>if(window.Tally){Tally.loadEmbeds();}else{document.querySelectorAll("iframe[data-tally-src]:not([src])").forEach(function(e){e.src=e.dataset.tallySrc;});}</script><script>window.addEventListener('message',function(e){if(e.origin!=='https://tally.so')return;var f=document.querySelector('.tallybox iframe');if(!f||e.source!==f.contentWindow)return;if(typeof e.data!=='string'||e.data.indexOf('[iFrameSizer]')!==0)return;var h=parseInt(e.data.slice(13).split(':')[1],10);if(h>=100&&h<=10000&&f.style.height!==h+'px')f.style.height=h+'px';});</script><!-- IA YAYA: aggregate pageviews and fixed-name link clicks only. -->
+<script>
+window.goatcounter = {
+  path: function () { return document.documentElement.lang === 'en' ? '/en/' : '/'; },
+  title: 'IA YAYA',
+  referrer: ''
+};
+(function () {
+  var links = {
+    '#inicio': 'inicio', '#comparte': 'comparte', '#encuentra': 'encuentra', '#nace': 'origen',
+    'https://iayaya.es/#comparte': 'comparte-qr',
+    'https://tally.so/r/xVXEPy': 'abrir-formulario',
+    'https://tally.so/r/Ar7N10': 'abrir-formulario',
+    'https://globalstartupcities.com/': 'global-startup-cities',
+    'https://tally.so/help/data-processing-agreement': 'tally-condiciones',
+    'https://tally.so/help/privacy-policy': 'tally-privacidad',
+    'https://www.aepd.es/': 'aepd',
+    'https://mareate.es/docs/Asturias50.pdf': 'asturias50-pdf',
+    'https://mareate.es/': 'mareate',
+    'https://specialthanksstudios.com/': 'special-thanks-studios'
+  };
+  document.addEventListener('click', function (event) {
+    var gc = window.goatcounter;
+    if (!gc || typeof gc.count !== 'function') return;
+    var target = event.target.closest('a,button');
+    if (!target) return;
+    var language = document.documentElement.lang === 'en' ? 'en' : 'es';
+    var name = target.id === 'langToggle' ? 'cambiar-idioma' : links[target.getAttribute('href')];
+    if (!name) return;
+    if (target.classList.contains('qr-link')) name = 'comparte-qr';
+    gc.count({path: 'click-' + language + '-' + name, title: 'click-' + language + '-' + name, referrer: '', event: true});
+    if (target.id === 'langToggle') {
+      setTimeout(function () { gc.count({event: false}); }, 0);
+    }
+  }, true);
+}());
+</script>
+<script data-goatcounter="https://iayaya.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+</body></html>
